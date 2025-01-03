@@ -11,3 +11,4 @@ export interface fullBlog {
     content: [],
     imageUrl: any,
 }
+

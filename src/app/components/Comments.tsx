@@ -10,7 +10,7 @@ export default function Comments() {
   const inputReference = useRef<HTMLInputElement>(null);
 
   const handleAddTasks = () => {
-    let inputValue = inputReference?.current?.value as string;
+    const inputValue = inputReference?.current?.value as string;
 
     if (!inputValue) {
       toast.warn("No comment added!", {
@@ -90,7 +90,7 @@ export default function Comments() {
           {tasks.length == 0 ? (
             <h1 className="mt-2 text-black">Drop a comment</h1>
           ) : (
-            tasks.map((elem, index) => {
+            tasks.map((elem, ) => {
               return (
                 <div
                   className="my-5  bg-slate-100 border-[1px]  border-[#8b8a8ab9]  rounded-lg py-3 px-4  justify-between flex items-center  text-[#2b2a2a]"
