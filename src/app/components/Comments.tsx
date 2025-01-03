@@ -68,15 +68,15 @@ export default function Comments() {
 
   return (
     <div>
-      <div className="text-xl w-[65vw] mt-9 text-priemery text-wrap text-center py-3 dark:bg-primary bg-slate-300 rounded-md  font-semibold leading-5 ">
+      <div className="text-xl md:w-[65vw] w-[80vw] relative left-7 md:left-0  mt-9 text-priemery text-wrap text-center py-3 dark:bg-primary bg-slate-300 rounded-md  font-semibold leading-5 ">
         Drop a comment
       </div>
-      <div className="m-6 p-10 bg-slate-200 w-[62vw] rounded-xl">
-        <div className="flex  gap-3">
+      <div className="m-6 p-10 bg-slate-200 w-[95vw] md:w-[60vw] rounded-xl">
+        <div className="flex  ">
           <input
             onKeyDown={onKeyEnter}
             ref={inputReference}
-            className="border-2 bg-white border-gray-300 pl-1 outline-none w-[55vw] rounded"
+            className="border-2 bg-white border-gray-300 md:pl-1 outline-none w-[55vw] rounded"
           />
           <button
             onClick={handleAddTasks}
